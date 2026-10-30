@@ -1,35 +1,411 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Terms of Service | Proofify Products</title>
-<meta name="description" content="Terms of Service for Proofify Products, a Shopify product reviews and customer rewards app." />
-<style>
-:root{--green:#16845c;--ink:#17332b;--muted:#60736c;--line:#e1ebe5;--bg:#f5faf7}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.75 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}header{background:#fff;border-bottom:1px solid var(--line)}.wrap{max-width:980px;margin:auto;padding:0 24px}.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:86px}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink);font-size:19px;font-weight:800}.brand img{width:48px;height:48px;object-fit:contain}.nav a.link{color:var(--green);font-size:14px;text-decoration:none;font-weight:650}.hero{padding:76px 0 58px;background:linear-gradient(135deg,#e6f6ed,#f9fdfb)}.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-weight:800;color:var(--green);font-size:12px}.hero h1{font-size:clamp(34px,6vw,54px);letter-spacing:-.04em;line-height:1.15;margin:13px 0}.hero p{max-width:680px;color:var(--muted);font-size:18px}.date{font-size:14px;color:var(--muted)}main{padding:48px 0 80px}.paper{background:white;border:1px solid var(--line);border-radius:20px;padding:clamp(22px,5vw,58px);box-shadow:0 15px 55px rgba(24,72,50,.05)}h2{font-size:23px;letter-spacing:-.02em;margin:36px 0 12px}h2:first-child{margin-top:0}p,li{color:#425a50}ul{padding-left:22px}a{color:var(--green)}.notice{background:#f0f8f3;border-left:4px solid var(--green);padding:15px 19px;border-radius:8px;color:#38594a}footer{padding:30px 0;border-top:1px solid var(--line);color:var(--muted);font-size:14px}footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}@media(max-width:550px){.nav{align-items:flex-start;padding:16px 0;min-height:auto}.brand{font-size:16px}.brand img{width:38px;height:38px}}
-</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Clear terms for using Proofify Products — product reviews with customer rewards.">
+    <title>Terms of Service | Proofify Products</title>
+    <style>
+        :root {
+            --green: #087b55;
+            --dark: #17362b;
+            --muted: #587367;
+            --line: #dcebe2;
+            --bg: #f6faf7;
+            --white: #fff
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        html {
+            scroll-behavior: smooth
+        }
+
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--dark);
+            font: 15px/1.8 system-ui, -apple-system, Segoe UI, Roboto, sans-serif
+        }
+
+        a {
+            color: var(--green)
+        }
+
+        .container {
+            width: min(920px, calc(100% - 36px));
+            margin: auto
+        }
+
+        .top {
+            background: #fff;
+            border-bottom: 1px solid var(--line)
+        }
+
+        .topbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            min-height: 76px
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 800;
+            color: var(--dark);
+            text-decoration: none
+        }
+
+        .brand img {
+            width: 38px;
+            height: 38px;
+            object-fit: contain
+        }
+
+        .toplinks {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px
+        }
+
+        .toplinks a,
+        .tabs a {
+            font-size: 13px;
+            text-decoration: none;
+            font-weight: 700;
+            padding: 9px 13px;
+            border-radius: 9px;
+            color: var(--muted)
+        }
+
+        .toplinks a:hover,
+        .tabs a:hover {
+            background: #eef7f1;
+            color: var(--green)
+        }
+
+        .toplinks a.active,
+        .tabs a.active {
+            background: #e4f5e9;
+            color: #066a49
+        }
+
+        .hero {
+            background: linear-gradient(125deg, #e3f5eb, #f8fcfa);
+            padding: 65px 0 44px
+        }
+
+        .eyebrow {
+            font-size: 11px;
+            letter-spacing: .18em;
+            text-transform: uppercase;
+            font-weight: 900;
+            color: var(--green)
+        }
+
+        h1 {
+            font-size: clamp(34px, 5vw, 50px);
+            line-height: 1.18;
+            letter-spacing: -.035em;
+            margin: 11px 0
+        }
+
+        .subtitle {
+            color: var(--muted);
+            font-size: 16px;
+            max-width: 640px
+        }
+
+        .date {
+            color: var(--muted);
+            font-size: 12px
+        }
+
+        .tabs {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-top: 26px
+        }
+
+        .tabs a {
+            background: #fff;
+            border: 1px solid var(--line);
+            font-size: 14px;
+            padding: 10px 16px
+        }
+
+        main {
+            padding: 34px 0 70px
+        }
+
+        .paper {
+            background: #fff;
+            border: 1px solid var(--line);
+            border-radius: 17px;
+            padding: clamp(23px, 5vw, 52px);
+            box-shadow: 0 16px 40px rgba(23, 54, 43, .045)
+        }
+
+        .paper h2 {
+            font-size: 20px;
+            line-height: 1.4;
+            margin: 33px 0 11px;
+            letter-spacing: -.015em
+        }
+
+        .paper h2:first-child {
+            margin-top: 0
+        }
+
+        .paper h3 {
+            font-size: 16px;
+            margin: 22px 0 6px
+        }
+
+        .paper p,
+        .paper li {
+            color: #40594d
+        }
+
+        .paper ul {
+            padding-left: 22px
+        }
+
+        .paper section {
+            margin-bottom: 30px
+        }
+
+        .paper .section-heading {
+            display: flex;
+            align-items: center;
+            gap: 12px
+        }
+
+        .paper .section-index {
+            font-weight: 800;
+            color: var(--green);
+            font-size: 12px
+        }
+
+        .paper .section-heading h2 {
+            margin: 12px 0
+        }
+
+        .notice {
+            background: #f0f8f3;
+            border-left: 3px solid var(--green);
+            padding: 15px 18px;
+            border-radius: 7px;
+            color: #365948
+        }
+
+        .legal-footer {
+            border-top: 1px solid var(--line);
+            padding: 24px 0;
+            color: var(--muted);
+            font-size: 13px
+        }
+
+        .footer-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            flex-wrap: wrap
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap
+        }
+
+        @media(max-width:640px) {
+            .topbar {
+                padding: 13px 0;
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 6px
+            }
+
+            .toplinks {
+                gap: 2px
+            }
+
+            .toplinks a {
+                padding: 6px 9px
+            }
+
+            .hero {
+                padding: 44px 0 32px
+            }
+
+            .tabs a {
+                flex: 1;
+                text-align: center;
+                padding: 9px 8px;
+                font-size: 12px
+            }
+        }
+    </style>
 </head>
+
 <body>
-<header><div class="wrap nav"><a class="brand" href="./"><img src="./assets/images/logo.png" alt="Proofify Products logo" /> <span>Proofify Products</span></a><a class="link" href="./privacy-policy.html">Privacy Policy</a></div></header>
-<section class="hero"><div class="wrap"><div class="eyebrow">Legal · Merchant terms</div><h1>Terms of Service</h1><p>Clear terms for using Proofify Products — product reviews with customer rewards.</p><div class="date">Last updated: October 30, 2026</div></div></section>
-<main class="wrap"><article class="paper">
-<div class="notice"><strong>Before publishing:</strong> Replace the contact placeholder, confirm your legal business identity and jurisdiction, and review the terms against your actual app features, billing, and data-handling practices. These terms do not by themselves constitute a signed Data Processing Agreement.</div>
-<h2>1. Acceptance of Terms</h2><p>These Terms of Service (“Terms”) govern your use of Proofify Products (the “App”), a Shopify application that helps merchants collect, display, and manage product reviews and customer rewards. By installing or using the App, you agree to these Terms on behalf of the business you represent. If you do not agree, do not use the App.</p>
-<h2>2. Who May Use the App</h2><p>You must have authority to operate the Shopify store on which the App is installed and to accept these Terms for that business. You are responsible for your Shopify account, staff permissions, and compliance with Shopify’s applicable terms.</p>
-<h2>3. App Features</h2><p>Depending on your plan and configuration, the App may offer review collection and moderation, photo or video reviews, verified-purchase indicators, review-request emails, storefront widgets, analytics, review imports, and discount-based customer rewards. Features may change, and some may depend on Shopify APIs, theme compatibility, or third-party services.</p>
-<h2>4. Merchant Responsibilities</h2><p>You are responsible for configuring the App lawfully, providing accurate product and store information, and ensuring that customer communications, review incentives, and discounts comply with applicable consumer-protection, marketing, privacy, and anti-spam laws. You must not use the App to create misleading reviews, suppress genuine negative feedback deceptively, or offer incentives conditioned on a positive rating. You remain responsible for your storefront disclosures and promotional terms.</p>
-<h2>5. Customer Reviews and Content</h2><p>You retain rights to content you own and are responsible for having appropriate rights and permissions to submit, import, display, and process reviews, images, videos, and other materials. You grant us a limited license to host, process, and display such content solely to provide and maintain the App. We may restrict content that is unlawful, infringes rights, or threatens the security or integrity of the service.</p>
-<h2>6. Customer Data and Privacy</h2><p>The App may process personal data such as customer names, email addresses, order-related information, review submissions, and reward activity as needed for configured features. You are responsible for providing required notices and obtaining any necessary permissions or consents. Our <a href="./privacy-policy.html">Privacy Policy</a> explains our data-handling practices. Where applicable law requires a separate data processing agreement, that agreement must be established separately; these Terms alone do not replace it.</p>
-<h2>7. Review Requests and Rewards</h2><p>If you enable automated review requests or discounts, you are responsible for choosing appropriate recipients, respecting opt-outs, setting lawful reward terms, and ensuring Shopify discount rules are followed. Reward eligibility and discount availability may depend on Shopify configuration and App functionality. Do not promise customers rewards that you cannot fulfill.</p>
-<h2>8. Plans, Fees, and Billing</h2><p>If paid plans or paid features are offered, applicable prices and billing terms will be presented before purchase through the relevant Shopify billing flow or other clearly disclosed checkout process. You are responsible for authorized charges. Any refunds or cancellations are governed by the terms disclosed for the relevant plan and applicable law. Do not interpret this section as a statement that a particular paid plan is currently available.</p>
-<h2>9. Third-Party Services</h2><p>The App relies on Shopify and may use service providers for hosting, databases, email delivery, and related infrastructure. Availability and functionality may be affected by those services. Your use of Shopify remains subject to Shopify’s own terms and policies.</p>
-<h2>10. Availability and Changes</h2><p>We aim to keep the App reliable but do not guarantee uninterrupted or error-free service. We may maintain, update, suspend, or discontinue features where reasonably necessary for security, compliance, or operation. Material changes to these Terms will be communicated as required by applicable law.</p>
-<h2>11. Security and Acceptable Use</h2><p>You must not misuse the App, interfere with its operation, attempt unauthorized access, upload malicious content, or use it to violate another person’s rights. Report suspected security issues through the contact method below.</p>
-<h2>12. Suspension, Uninstallation, and Data</h2><p>You may uninstall the App through Shopify. Uninstallation may stop App functionality and access to related features. We handle personal data after uninstallation in accordance with our Privacy Policy, applicable law, and valid privacy or deletion requests. Uninstallation does not necessarily result in immediate deletion of every record.</p>
-<h2>13. Intellectual Property</h2><p>The App, its software, branding, and documentation remain the property of their respective owners. Subject to these Terms, we grant you a limited, non-exclusive, revocable right to use the App for your Shopify business. No ownership rights in the App are transferred to you.</p>
-<h2>14. Disclaimers</h2><p>To the extent permitted by applicable law, the App is provided on an “as available” basis without warranties of uninterrupted availability, merchant sales results, review volume, or suitability for every business. Nothing in these Terms excludes rights or warranties that cannot legally be excluded.</p>
-<h2>15. Limitation of Liability</h2><p>To the maximum extent permitted by applicable law, neither party is liable for indirect, incidental, special, or consequential losses arising from use of the App. Any enforceable limitation of direct liability should be assessed in light of the applicable jurisdiction, mandatory consumer or business protections, and the commercial terms actually offered.</p>
-<h2>16. Governing Law and Disputes</h2><p>Applicable governing law and dispute-resolution terms should be identified based on the legal entity operating Proofify Products and the jurisdictions in which it offers the App. Until finalized, this section does not impose a specific jurisdiction or forum.</p>
-<h2>17. Contact</h2><p>For questions about these Terms, privacy, or service issues, contact:<br /><strong>Proofify Products</strong><br />Email: <strong>[INSERT SUPPORT EMAIL]</strong><br />Business/legal entity: <strong>[INSERT LEGAL ENTITY NAME]</strong></p>
-</article></main>
-<footer><div class="wrap"><span>© 2026 Proofify Products. All rights reserved.</span><span>Product reviews with customer rewards.</span></div></footer>
-</body></html>
+    <header class="top">
+        <div class="container topbar"><a class="brand" href="./privacy-policy.html"><img src="./assets/images/logo.png"
+                    alt="Proofify Products logo"><span>Proofify Products</span></a>
+            <div>Product reviews with customer rewards.</div>
+        </div>
+    </header>
+    <div class="hero">
+        <div class="container">
+            <h1>Terms of Service</h1>
+            <p class="subtitle">Clear terms for using Proofify Products - product reviews with customer rewards.</p>
+            <p class="date">Last updated: October 30, 2026</p>
+            <nav class="tabs" aria-label="Legal documents"><a class="" href="./privacy-policy.html">Privacy Policy</a><a
+                    class="active" href="./terms-of-service.html" aria-current="page">Terms of Service</a><a class=""
+                    href="./data-processing-agreement.html">Data Processing Agreement</a></nav>
+        </div>
+    </div>
+    <main class="container">
+        <article class="paper">
+
+
+
+            <h2>1. Acceptance of Terms</h2>
+            <p>These Terms of Service (“Terms”) govern your use of Proofify Products (the “App”), a Shopify application
+                that helps merchants collect, display, and manage product reviews and customer rewards. By installing or
+                using the App, you agree to these Terms on behalf of the business you represent. If you do not agree, do
+                not use the App.</p>
+
+
+            <h2>2. Who May Use the App</h2>
+            <p>You must have authority to operate the Shopify store on which the App is installed and to accept these
+                Terms for that business. You are responsible for your Shopify account, staff permissions, and compliance
+                with Shopify’s applicable terms.</p>
+
+
+            <h2>3. App Features</h2>
+            <p>Depending on your plan and configuration, the App may offer review collection and moderation, photo or
+                video reviews, verified-purchase indicators, review-request emails, storefront widgets, analytics,
+                review imports, and discount-based customer rewards. Features may change, and some may depend on Shopify
+                APIs, theme compatibility, or third-party services.</p>
+
+
+            <h2>4. Merchant Responsibilities</h2>
+            <p>You are responsible for configuring the App lawfully, providing accurate product and store information,
+                and ensuring that customer communications, review incentives, and discounts comply with applicable
+                consumer-protection, marketing, privacy, and anti-spam laws. You must not use the App to create
+                misleading reviews, suppress genuine negative feedback deceptively, or offer incentives conditioned on a
+                positive rating. You remain responsible for your storefront disclosures and promotional terms.</p>
+
+
+            <h2>5. Customer Reviews and Content</h2>
+            <p>You retain rights to content you own and are responsible for having appropriate rights and permissions to
+                submit, import, display, and process reviews, images, videos, and other materials. You grant us a
+                limited license to host, process, and display such content solely to provide and maintain the App. We
+                may restrict content that is unlawful, infringes rights, or threatens the security or integrity of the
+                service.</p>
+
+
+            <h2>6. Customer Data and Privacy</h2>
+            <p>The App may process personal data such as customer names, email addresses, order-related information,
+                review submissions, and reward activity as needed for configured features. You are responsible for
+                providing required notices and obtaining any necessary permissions or consents. Our <a
+                    href="./privacy-policy.html">Privacy Policy</a> explains our data-handling practices. Where
+                applicable law requires a separate data processing agreement, that agreement must be established
+                separately; these Terms alone do not replace it.</p>
+
+
+            <h2>7. Review Requests and Rewards</h2>
+            <p>If you enable automated review requests or discounts, you are responsible for choosing appropriate
+                recipients, respecting opt-outs, setting lawful reward terms, and ensuring Shopify discount rules are
+                followed. Reward eligibility and discount availability may depend on Shopify configuration and App
+                functionality. Do not promise customers rewards that you cannot fulfill.</p>
+
+
+            <h2>8. Plans, Fees, and Billing</h2>
+            <p>If paid plans or paid features are offered, applicable prices and billing terms will be presented before
+                purchase through the relevant Shopify billing flow or other clearly disclosed checkout process. You are
+                responsible for authorized charges. Any refunds or cancellations are governed by the terms disclosed for
+                the relevant plan and applicable law. Do not interpret this section as a statement that a particular
+                paid plan is currently available.</p>
+
+
+            <h2>9. Third-Party Services</h2>
+            <p>The App relies on Shopify and may use service providers for hosting, databases, email delivery, and
+                related infrastructure. Availability and functionality may be affected by those services. Your use of
+                Shopify remains subject to Shopify’s own terms and policies.</p>
+
+
+            <h2>10. Availability and Changes</h2>
+            <p>We aim to keep the App reliable but do not guarantee uninterrupted or error-free service. We may
+                maintain, update, suspend, or discontinue features where reasonably necessary for security, compliance,
+                or operation. Material changes to these Terms will be communicated as required by applicable law.</p>
+
+
+            <h2>11. Security and Acceptable Use</h2>
+            <p>You must not misuse the App, interfere with its operation, attempt unauthorized access, upload malicious
+                content, or use it to violate another person’s rights. Report suspected security issues through the
+                contact method below.</p>
+
+
+            <h2>12. Suspension, Uninstallation, and Data</h2>
+            <p>You may uninstall the App through Shopify. Uninstallation may stop App functionality and access to
+                related features. We handle personal data after uninstallation in accordance with our Privacy Policy,
+                applicable law, and valid privacy or deletion requests. Uninstallation does not necessarily result in
+                immediate deletion of every record.</p>
+
+
+            <h2>13. Intellectual Property</h2>
+            <p>The App, its software, branding, and documentation remain the property of their respective owners.
+                Subject to these Terms, we grant you a limited, non-exclusive, revocable right to use the App for your
+                Shopify business. No ownership rights in the App are transferred to you.</p>
+
+
+            <h2>14. Disclaimers</h2>
+            <p>To the extent permitted by applicable law, the App is provided on an “as available” basis without
+                warranties of uninterrupted availability, merchant sales results, review volume, or suitability for
+                every business. Nothing in these Terms excludes rights or warranties that cannot legally be excluded.
+            </p>
+
+
+            <h2>15. Limitation of Liability</h2>
+            <p>To the maximum extent permitted by applicable law, neither party is liable for indirect, incidental,
+                special, or consequential losses arising from use of the App. Any enforceable limitation of direct
+                liability should be assessed in light of the applicable jurisdiction, mandatory consumer or business
+                protections, and the commercial terms actually offered.</p>
+
+
+            <h2>16. Governing Law and Disputes</h2>
+            <p>These Terms are intended to be interpreted under the applicable laws of Bangladesh, subject to mandatory
+                laws that may apply to merchants in other jurisdictions. Disputes will be handled by courts of competent
+                jurisdiction in Bangladesh unless mandatory law requires otherwise. This clause should be reviewed for
+                the operator’s actual legal circumstances.</p>
+
+
+
+            <h2>17. Contact</h2>
+            <p>For questions about these Terms, privacy, or service issues, contact:<br /><strong>Proofify
+                    Products</strong><br />Email: <a
+                    href="mailto:support@theecompilot.com">support@theecompilot.com</a><br />Operated under the brand
+                name <strong>The Ecom Pilot</strong>.</p>
+
+        </article>
+    </main>
+    <footer class="legal-footer">
+        <div class="container footer-row"><span>© 2026 Proofify Products · The Ecom Pilot</span>
+            <nav class="footer-links" aria-label="Footer legal links"><a class="" href="./privacy-policy.html">Privacy
+                    Policy</a><a class="active" href="./terms-of-service.html" aria-current="page">Terms of
+                    Service</a><a class="" href="./data-processing-agreement.html">Data Processing Agreement</a></nav>
+        </div>
+    </footer>
+</body>
+
+</html>
